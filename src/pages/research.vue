@@ -1,6 +1,9 @@
 <template>
 
-    <div class="Background">
+    <div class="Research">
+        <div class="title">
+            <h1>Research</h1>
+        </div>
         <div class="content">
             <div v-html="compiled"></div>
         </div>
@@ -9,12 +12,12 @@
 </template>
 <script>
 import marked from 'marked'
-import background from './background.md'
+import research from './research.md'
 
 export default {
     data() {
         return {
-            source: background
+            source: research
         }
     },
     computed:{
@@ -27,7 +30,7 @@ export default {
 </script>
 <style scoped>
 
-.Background {
+.Research {
     width: 100%;
     /* height: 100%; */
 }

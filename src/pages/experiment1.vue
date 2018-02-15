@@ -1,6 +1,6 @@
 <template>
 
-    <div class="Background">
+    <div class="Experiment1">
         <div class="content">
             <div v-html="compiled"></div>
         </div>
@@ -9,12 +9,12 @@
 </template>
 <script>
 import marked from 'marked'
-import background from './background.md'
+import experiment1 from './experiment1.md'
 
 export default {
     data() {
         return {
-            source: background
+            source: experiment1
         }
     },
     computed:{
@@ -27,7 +27,7 @@ export default {
 </script>
 <style scoped>
 
-.Background {
+.Experiment1 {
     width: 100%;
     /* height: 100%; */
 }
